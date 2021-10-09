@@ -1,0 +1,14 @@
+node_modules
+
+dist
+
+Dockerfile
+
+.github
+.gitignore
+
+# *.env
+
+.editorconfig
+.prettierrc
+README.md
