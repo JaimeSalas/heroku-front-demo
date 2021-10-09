@@ -6,6 +6,10 @@ COPY . .
 
 # Prepare static files
 FROM base AS build-front
+
+ARG BASE_API_URL
+ENV BASE_API_URL=$BASE_API_URL  
+
 RUN npm ci 
 RUN npm run build
 
