@@ -22,5 +22,5 @@ jobs:
       - name: Push Docker Image
         run: docker push ${{ env.IMAGE_NAME }}
       - name: Release
-        run: heroku container:release web -a js-heroku-front-demo
+        run: heroku container:release -a js-heroku-front-demo web
       
